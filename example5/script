@@ -1,0 +1,40 @@
+
+
+set -x
+#set -v
+#set -e 
+#set +x
+# Exercice 1
+# creer un script qui retorun la somme des 3 valeur 
+# entrer en parametre
+# somme 3 4
+# 7
+a='ls'
+$a
+echo $(( $1 + $2 ))
+
+# exercice 2
+# ajouter a la date courante le nombre d'annee 
+# passer en parametre 
+d=$(date +%Y)
+
+echo $(( $d + $3 ))
+
+somme=`expr $1 + $2`
+
+echo $somme
+
+produit=`expr $1 \* $2`
+
+echo $produit
+
+
+division=`expr $1 / $2`
+
+echo $division
+
+
+exit 3
+
+
+

@@ -1,3 +1,25 @@
 
 
 echo "hello from mon script $0"
+
+# Exercice
+#ecrir un script qui prend en parametre le nom et prenom et afficher 
+#hello <nom> <Pronom>
+
+echo "hello $1 $2 $3 $4"
+
+
+echo "hello from $0
+
+vous etes:
+Nom: $2
+Prenom: $3
+age: $1"
+
+
+printf  "hello from $0 \nvous etes: \n
+Nom: $2
+Prenom: $3 \nage: $1 \n"
+
+
+
