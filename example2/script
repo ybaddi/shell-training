@@ -1,0 +1,24 @@
+# Exercice 1:
+# cherche dans la racine les fichier avec lextention .c, 
+#sans l'affichage des message d'erreur, 
+#ces fichier doivent commencer par F ou f
+
+find / -name "*.c" -a -name "[Ff]*" -a ! -name "*[0-9]*" -print  2> /dev/null
+
+
+# Exercice 2:
+# cherche dans la racine les fichier avec lextention .c,
+#sans l'affichage des message d'erreur,
+#ces fichier doivent commencer par X ou x
+# il contien de chifre
+
+
+# Exercice 3:
+# chercher dans /usr les fichiers dans la taille depass 1Mo
+# avec les droits 755
+
+
+# Exercice 4:
+# citer la difference entre les deux commend suivante:
+# find . -type -f | grep user
+# find . -type | xargs grep user
