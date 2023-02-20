@@ -45,3 +45,13 @@ printf 'the used shell is $SHELL \n'
 
 
 printf "%(%m-%Y)T\n"  $(date +%s)
+
+
+# 20-02-2023 10:36
+printf "%(%d/%m/%Y %H:%M)T\n" $(date +%s)
+
+
+printf "%x\n" 450
+
+printf "%X\n" 450
+
