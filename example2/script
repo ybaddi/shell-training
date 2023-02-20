@@ -3,7 +3,7 @@
 #sans l'affichage des message d'erreur, 
 #ces fichier doivent commencer par F ou f
 
-find / -name "*.c" -a -name "[Ff]*" -a ! -name "*[0-9]*" -print  2> /dev/null
+find / -name "*.c" -a -name "[Ff]*"  -print  2> /dev/null
 
 
 # Exercice 2:
@@ -11,14 +11,21 @@ find / -name "*.c" -a -name "[Ff]*" -a ! -name "*[0-9]*" -print  2> /dev/null
 #sans l'affichage des message d'erreur,
 #ces fichier doivent commencer par X ou x
 # il contien de chifre
-
+find / -name "*.c" -a -name "[Ff]*" -a ! -name "*[0-9]*" -print  2> /dev/null
 
 # Exercice 3:
 # chercher dans /usr les fichiers dans la taille depass 1Mo
 # avec les droits 755
 
+echo "================"
+find /usr -size +1M -a -perm 755 -exec ls -al {} \;
 
 # Exercice 4:
-# citer la difference entre les deux commend suivante:
-# find . -type -f | grep user
-# find . -type | xargs grep user
+# citer/la diffrence entre les deux commend suivante:
+# find / -type f | grep user
+# find / -type -f | xargs grep user
+
+
+
+
+
