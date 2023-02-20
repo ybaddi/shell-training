@@ -1,0 +1,47 @@
+echo "hello world"
+
+printf "%s" "hello, world"
+
+
+printf "%s" "hello, world \n"
+
+
+printf "%s\n" "hello, world"
+
+
+printf "hello, world \n"
+
+
+printf "%d\n" "12345"
+
+
+printf "%3d\n" "12345"
+
+
+printf "%f\n" "123.45"
+
+
+printf "%.3f\n" "123.45"
+
+printf "%08.3f\n" "123.45"
+
+
+
+printf "%s %s\n"   C 123456
+printf "%2s %9s\n"   C 123456
+
+
+
+printf "the used shell is "$SHELL"\n"
+
+
+
+printf "the used shell is $SHELL \n"
+
+
+printf 'the used shell is $SHELL \n'
+
+
+
+
+printf "%(%m-%Y)T\n"  $(date +%s)
