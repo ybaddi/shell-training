@@ -1,0 +1,12 @@
+# Exercice 3:
+
+# suprimer a la fin du chaine de caractere passer en parametre
+# le motif passer aussi en parametre
+# exemple ./script "text text text" text
+# qui affiche text text
+
+chain=$1
+motif=$2
+echo ${chain% $motif}
+
+

@@ -1,0 +1,37 @@
+# Exercice 1:
+
+# remplacer toutes les occurent du parametre 1 par 
+# le parametre 2 d'une chaine de caracter passer 
+# en parametre aussi
+
+# text=$3
+# echo ${text//$1/$2}
+
+# Exercice 2:
+
+# suprimer au debut du chaine de caractere passer en parametre
+# le motif passer aussi en parametre
+# exemple ./script "text text text" text
+# qui affiche text text
+
+# motif=$2
+# echo ${text/#$motif}
+
+# Exercice 3:
+
+# suprimer a la fin du chaine de caractere passer en parametre
+# le motif passer aussi en parametre
+# exemple ./script "text text text" text
+# qui affiche text text
+
+chain=$1
+motif=$2
+echo ${chain% $motif}
+
+
+
+# Exercice 4:
+
+# recupere le shell de login d'un utilisateur entre en 
+# parametre a partir du fichier /etc/password
+

@@ -1,0 +1,11 @@
+# Exercice 2:
+
+# suprimer au debut du chaine de caractere passer en parametre
+# le motif passer aussi en parametre
+# exemple ./script "text text text" text
+# qui affiche text text
+
+# motif=$2
+# echo ${text/#$motif}
+
+

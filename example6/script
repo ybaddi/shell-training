@@ -1,0 +1,11 @@
+# exercice
+
+
+# ecrir un script qui calcule la somme des parametres
+# si l'un des parametre est null il est remplacer par 
+# la valeur neutre
+echo $#
+a=$1
+b=$2
+echo $(( ${a:?"variable a is not defined"} + ${b:?"variable b is not defined"} ))
+

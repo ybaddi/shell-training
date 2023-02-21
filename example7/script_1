@@ -1,0 +1,8 @@
+# Exercice 1:
+
+# remplacer toutes les occurent du parametre 1 par 
+# le parametre 2 d'une chaine de caracter passer 
+# en parametre aussi
+
+text=$3
+echo ${text//$1/$2}
