@@ -52,6 +52,18 @@ esac
 # entrer avec la commend read
 # et afficher son uid
 
+
+read -p "Veuillez entrer l'utilisateur " user
+#echo $user
+
+if grep "^$user:"  /etc/passwd > /dev/null
+then
+  echo `id $user | cut  -d' ' -f1`
+else
+  echo "user not exist"
+fi
+
+
 # Exercice 4
 # creer un script calcule qui permet de faire un calcule
 # entre deux valeur
