@@ -98,7 +98,30 @@ echo "executable = $num_exec"
 # creer un script qui affiche en inverse le resultat de la
 # commande ls
 
+compt=0
+for fichier in * ; do
+#  echo $fichier
+  tab[$compt]=$fichier
+  compt=$(( $compt + 1))
+done
+echo "==========="
+#echo $compt
+for(( i=$(( $compt - 1 ));i>=0;i=$i-1))
+{
+#  echo $i
+  echo ${tab[$i]}
+}
 
+
+
+# exemple function qui calcule la some
+
+
+function fonction {
+     echo $(( $1 + $2 ))
+}
+
+echo `fonction $1 $2`
 #Exercice 4:
 # creer un script qui lit a partir d'un fichier csv d'une
 # base de donnee des etudiant
