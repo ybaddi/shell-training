@@ -122,6 +122,7 @@ function fonction {
 }
 
 echo `fonction $1 $2`
+
 #Exercice 4:
 # creer un script qui lit a partir d'un fichier csv d'une
 # base de donnee des etudiant

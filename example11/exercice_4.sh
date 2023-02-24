@@ -1,20 +1,19 @@
 #!/bin/bash
 
-# reuperer les fichier
-if [ $# -ne 3 ]; then
-  echo "please you need to set the folder"
-  read -p "put the folder name " folder
+
+# reuperer le fichier
+if [ $# -ne 1 ]; then
+  echo "please you need to set the databse"
+  read -p "put the database file " database
 else
-  folder=$1
+  database=$1
 fi
 
-echo $folder
-cd $folder
-for f in *; do
-#  echo $f
-  if [[ "$f" == *"$2" ]]; then
-    filename=`basename -s $2 $f`
-    extention=$3
-    mv "$f" "$filename$extention"
+while read row; do
+#  echo $row
+  note=`echo "$row" | cut -d';' -f2`
+  if [ $note -gt 10 ]; then
+    name=`echo "$row" | cut -d';' -f1`
+    echo "name is $name" " est ma note is $note"
   fi
-done
+done < $database
